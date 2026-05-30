@@ -35,6 +35,17 @@ It is built with Rust, `eframe/egui`, and a safety-first duplicate cleanup workf
 
 ---
 
+## Screenshots
+
+### Gallery View
+
+![PhotoScout gallery view](assets/screenshots/gallery-view.png)
+
+### Duplicate Review
+
+![PhotoScout duplicate review](assets/screenshots/duplicate-review.png)
+
+
 ## Safety Model
 
 PhotoScout is designed to avoid destructive mistakes.
