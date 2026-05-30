@@ -1,0 +1,41 @@
+# Rust build output
+/target/
+
+# PhotoScout diagnostics / benchmark logs
+/benchmark/
+
+# Release packages and local packaged builds
+/dist/
+/release/
+*.zip
+*.tar.gz
+*.7z
+
+# Windows build/debug artifacts
+*.exe
+*.pdb
+*.ilk
+
+# Logs
+*.log
+*.jsonl
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp

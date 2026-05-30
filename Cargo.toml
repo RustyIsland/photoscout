@@ -1,0 +1,30 @@
+[package]
+name = "photoscout"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Native Rust desktop photo finder with multi-folder scan, thumbnails, search, and duplicate detection."
+
+[dependencies]
+eframe = { package = "eframe", version = "0.34.3" }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp", "bmp", "gif"] }
+fast_image_resize = { version = "6", features = ["image"] }
+zune-jpeg = "0.5"
+walkdir = "2"
+blake3 = "1"
+rayon = "1"
+crossbeam-channel = "0.5"
+rfd = "0.17.2"
+open = "5"
+trash = "5"
+thiserror = "2"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+opt-level = 3
